@@ -3,7 +3,7 @@
   if (document.readyState == "complete") {
     init();
   } else {
-    window.onload = init;
+    window.addEventListener('load', init);
   }
 
   var loggedIn = false;
