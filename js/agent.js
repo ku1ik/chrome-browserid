@@ -12,7 +12,7 @@
     if (!navigator.id)
       return;
 
-    sendToContent({ type: "icon", show: true });
+    sendToContent({ type: "init" });
     window.addEventListener('browserid-exec', onMessage);
     navigator.id.watch({ onlogin: onLogin, onlogout: onLogout });
   }

@@ -7,12 +7,9 @@ function onMessage(request, sender, sendResponse) {
   console.log('message received in background');
   console.log(request);
 
-  if (request.type == 'icon') {
-    if (request.show) {
-      chrome.pageAction.show(sender.tab.id);
-    } else {
-      chrome.pageAction.hide(sender.tab.id);
-    }
+  if (request.type == 'init') {
+    chrome.pageAction.show(sender.tab.id);
+
   } else if (request.type == 'auth') {
     var path, title;
 
