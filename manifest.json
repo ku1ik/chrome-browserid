@@ -15,6 +15,7 @@
     ],
 
     "js": [
+      "js/script_injector.js",
       "js/content.js"
     ],
 
@@ -24,10 +25,14 @@
 
   "page_action": {
     "default_icon": {
-      "19": "images/persona-logo.png",
-      "38": "images/persona-logo.png"
+      "19": "images/persona-logged-out.png",
+      "38": "images/persona-logged-out.png"
     },
 
-    "default_title": "BrowserID"
-  }
+    "default_title": "Mozilla Persona"
+  },
+
+  "web_accessible_resources": [
+    "js/agent.js"
+  ]
 }
