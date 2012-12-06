@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "chrome-browserid",
+  "version": "0.1",
+  "description": "BrowserID login/logout in Chrome UI",
+
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+
+  "content_scripts": [{
+    "matches" : [
+      "http://*/*",
+      "https://*/*"
+    ],
+
+    "js": [
+      "js/content.js"
+    ],
+
+    "run_at": "document_idle",
+    "all_frames": false
+  }],
+
+  "page_action": {
+    "default_icon": {
+      "19": "images/persona-logo.png",
+      "38": "images/persona-logo.png"
+    },
+
+    "default_title": "BrowserID"
+  }
+}
