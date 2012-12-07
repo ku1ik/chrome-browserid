@@ -15,7 +15,6 @@
     ],
 
     "js": [
-      "js/script_injector.js",
       "js/content.js"
     ],
 
@@ -33,6 +32,6 @@
   },
 
   "web_accessible_resources": [
-    "js/agent.js"
+    "js/page.js"
   ]
 }

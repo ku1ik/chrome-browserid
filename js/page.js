@@ -31,7 +31,7 @@
   }
 
   function onMessage(event) {
-    console.log('message received in agent');
+    console.log('message received in page');
     console.log(event.detail);
 
     var data = event.detail;
