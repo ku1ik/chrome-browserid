@@ -48,6 +48,7 @@ extension" and point Chrome to a directory with extension code.
 
 * Don't assume page is using BrowserID when navigator.id is present
 * Display e-mail of logged in user
+* Decide on naming (BrowserID vs Mozilla Persona) - ask Mozilla devs
 
 ## Author
 
