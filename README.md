@@ -7,6 +7,8 @@ form of Chrome extension.
 (specifically an icon in address bar) in addition to usual login/logout links
 provided by the websites.
 
+It uses BrowserID ["Observer" API](https://developer.mozilla.org/en-US/docs/DOM/navigator.id).
+
 ## Features
 
 If a website is using BrowserID authentication this extension displays an icon
@@ -22,6 +24,9 @@ When logged in:
 
 Clicking on the icon requests website's login or logout, depending on the
 current state.
+
+Logging in/out via website provided mechanisms is detected and reflected in the
+status icon.
 
 ## Installation
 
