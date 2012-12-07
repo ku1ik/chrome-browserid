@@ -9,7 +9,8 @@
   var loggedIn = false;
 
   function init() {
-    if (!navigator.id)
+    // just quit if no navigator observer API available
+    if (!navigator.id || !navigator.id.watch)
       return;
 
     sendToContent({ type: "init" });
